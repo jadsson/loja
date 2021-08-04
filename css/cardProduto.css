@@ -1,0 +1,109 @@
+.secaoProdutos {
+    width: 100%;
+    max-width: 1200px;
+    background: var(--sombra);
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#cardComIconeAdd {
+    position: relative;
+}
+.secaoProdutos a {
+    color: var(--letter-primary);
+    text-decoration: none;
+}
+.produtoUnico {
+    max-width: 200px;
+    width: 40vw;
+    min-height: 280px;
+    border-radius: 6px;
+    
+    margin: 5px;
+    background: var(--back-page);
+    overflow: hidden;
+    border: 1px solid var(--border-preta);
+}
+.produtoUnico #imgProdutoCard {
+    height: 120px;
+    width: 100%;
+    object-fit: cover;
+    background: var(--fundo-img);
+}
+#cardComIconeAdd #iconeCardAddCarrinho {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: var(--verde-transparente);
+    border-radius: 50%;
+    padding: 5px;
+    transition: .4s;
+    cursor: pointer;
+}
+#cardComIconeAdd:hover #iconeCardAddCarrinho {
+    background: var(--verde);
+}
+.conteudoProduto {
+    padding: 5px;
+}
+.conteudoProduto h2 {
+    margin-top: 10px;
+}
+.conteudoProduto h1, h2, h3 {
+    font-weight: 400;
+}
+.conteudoProduto p.green {
+    color: var(--verde);
+}
+.conteudoProduto p.red {
+    color: var(--red);
+}
+
+.secaoCardProduto {
+    max-width: 1200px;
+    width: 90vw;
+    background: var(--sombra);
+    border: 1px solid var(--border-preta);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.secaoCardProduto a {
+    color: var(--letter-primary);
+    text-decoration: none;
+}
+.secaoCardProduto h1 {
+    margin-right: 10px;
+}
+
+#produtoNaoEncontrado span {
+    color:var(--verde); 
+    font-size: 30px;
+}
+
+@media (max-width: 600px) {
+    .conteudoProduto h1, h2, h3, p {
+        font-size: .8em;
+    }
+    .conteudoProduto p {
+        margin-top: 10px;
+    }
+    .secaoCardProduto {
+        padding: 0;
+    }
+}
+
+/* h1 que descreve a página */
+.h1-descPagina {
+    max-width: 1200px; 
+    width: 90vw; 
+    color: var(--verde);
+    margin: auto;
+    border-bottom: 4px solid var(--verde);
+    font-size: 30px;
+}

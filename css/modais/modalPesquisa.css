@@ -1,0 +1,56 @@
+#modal-pesquisa {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.94);
+    padding-top: 70px;
+    display: none;
+    z-index: 2;
+}
+.modal-pesquisa-content {
+    width: 80%;
+    height: 40vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.modal-pesquisa-content form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.modal-pesquisa-content input[type=text] {
+    background: none;
+    width: 90%;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid var(--border);
+    outline: none;
+    color: var(--letter-primary);
+    font-size: 18px;
+}
+.modal-pesquisa-content input[type=text]:focus {
+    border-bottom-color: var(--red);
+}
+.modal-pesquisa-content input[type=submit] {
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+}
+.modal-pesquisa-content img {
+    padding: 10px;
+    background: var(--background-menu);
+    border-radius: 50%;
+    position: absolute;
+    top: 90px;
+    right: 50px;
+    cursor: pointer;
+}
+.modal-pesquisa-content img:hover {
+    background: var(--red);
+}

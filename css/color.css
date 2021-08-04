@@ -1,0 +1,25 @@
+:root {
+    --border: rgb(87, 87, 87);
+    --border-escura: rgb(70, 70, 70);
+    --border-preta: rgb(41, 41, 41);
+    --fundo-img: rgb(35, 34, 39);
+    --borda-verde: rgb(46, 65, 53);
+
+    --letter-primary: #d1d1d1;
+    --red: rgb(192, 138, 0);
+    --red-transparente: rgba(255, 234, 44, 0.5);
+    --verde: rgb(89, 187, 59);
+    --nome-comentario: rgb(133, 206, 133);
+    --verde-transparente: rgba(31, 196, 39, 0.2);
+    --gradiente: linear-gradient(to right, black, rgba(0,0,0,.2));
+    --sombra: rgb(14, 14, 14);
+    --sombra-clara: rgba(163, 163, 163, 0.404);
+    
+    --fundo-modal: rgba(0,0,0,.8);
+
+    --back-page: rgb(20,20,20);
+    --background-menu: rgba(255, 255, 255, 0.5);
+    --background-button: rgb(200,200,200);
+    --input-letter-secundary: rgb(156,156,156);
+
+}

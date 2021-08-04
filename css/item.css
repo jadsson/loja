@@ -1,0 +1,235 @@
+#paginaItemUnico {
+    background: var(--sombra);
+    max-width: 1800px;
+    width: 90vw;
+    margin: auto;
+    border-radius: 6px;
+    box-shadow: 0 0 5px 0 var(--sombra);
+    margin-bottom: 40px;
+    border: 1px solid var(--borda-verde);
+    padding: 10px;
+}
+#corpoItem {
+    margin: auto;
+}
+#ladoEsquerdo, #ladoDireito {
+    max-width: 770px;
+    margin: auto;
+}
+.imgItemUnico {
+    border-radius: 6px;
+    height: 100%;
+    max-height: 600px;
+    max-width: 840px;
+    overflow: hidden;
+}
+.imgItemUnico img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.conteudoItemUnico {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top: 1px solid var(--border-preta);
+}
+.conteudoItemUnico h1 {
+    color: var(--verde);
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.conteudoItemUnico h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.conteudoItemUnico p {
+    font-size: 20px;
+}
+.conteudoItemUnico #qtd {
+    margin: 30px 0;
+}
+.conteudoItemUnico .disponivel {
+    color: var(--verde);
+}
+.conteudoItemUnico .naoDisponivel {
+    color: var(--red);
+}
+.conteudoItemUnico button {
+    width: 100%;
+    height: 40px;
+    margin: 5px 0 0 0;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    font-weight: 600;
+}
+#btComprar {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    color: var(--back-page);
+    width: 100%;
+    line-height: 40px;
+    background: var(--verde);
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+#btAdicionaCarrinho {
+    background: var(--background-button);
+}
+
+/* formulario de pergunta */
+#pedidoLogin {
+    font-size: 30px;
+    max-width: 770px;
+    margin: auto;
+    background-color: var(--back-page);
+    padding: 15px;
+    margin-top: 40px;
+    text-align: center;
+}
+#pedidoLogin span {
+    color: var(--red);
+}
+#formPergunta {
+    margin: auto;
+    max-width: 770px;
+}
+#formPergunta textarea {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 50px;
+    padding: 10px;
+    display: block;
+    margin: 100px auto 0 auto;
+    outline: none;
+    background: none;
+    border: none;
+    border: 1px solid var(--borda-verde);
+    color: var(--letter-primary);
+
+}
+#formPergunta input[type=submit] {
+    background: var(--background-button);
+    width: 100%;
+    height: 40px;
+    border: none;
+    margin-top: 5px;
+    cursor: pointer;
+}
+/* comentarios */
+#secaoComentarios {
+    margin: 20px auto;
+    max-width: 770px;
+    border-bottom: 1px solid var(--border-preta);
+    background-color: var(--back-page);
+    padding: 5px;
+    border-radius: 6px;
+}
+#secaoComentarios .nomeCliente {
+    color: var(--nome-comentario);
+    padding-left: 10px;
+}
+#secaoComentarios .conteudoCliente {
+    padding: 5px 5px 5px 10px;
+    line-height: 25px;
+}
+#formResponderComentario {
+    max-width: 770px;
+    margin: -15px auto 0 auto;
+    text-align: right;
+}
+#formResponderComentario input {
+    height: 30px;
+    background: var(--background-button);
+    border: none;
+    outline: none;
+    padding: 0 5px;
+    cursor: pointer;
+}
+#formularioDeResposta {
+    margin: auto;
+    text-align: right;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+    background: var(--fundo-modal);
+}
+#formularioDeResposta form {
+    margin: calc(70px + 10vh) auto;
+    max-width: 770px;
+}
+#formularioDeResposta #comentarioDoUsuario {
+    width: 100%;
+}
+#formularioDeResposta textarea {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 50px;
+    max-height: 100px;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+#formularioDeResposta input, button {
+    padding: 0 5px;
+    border: none;
+    height: 50px;
+    cursor: pointer;
+}
+#formularioDeResposta input {
+    background: var(--verde);
+}
+#formularioDeResposta button {
+    background: var(--red);
+    color: var(--letter-primary);
+}
+
+#divResposta {
+    max-width: 700px;
+    width: 80vw;
+    margin: auto;
+    text-align: right;
+}
+#respostaDoVendedor {
+    margin: 5px auto 0 auto;
+    padding: 0 0 10px 0; 
+}
+.nomeVendedor {
+    color: var(--red);
+    font-weight: 600;
+}
+.conteudoResposta {
+    border-bottom: 1px solid var(--border-preta);
+    padding: 5px 0;
+}
+/* formulario excluir produto */
+#excluir-produto {
+    width: 100%;
+}
+#input-excluir-produto, 
+#input-editar-produto {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    margin: 5px 0;
+    cursor: pointer;
+    color: var(--letter-primary);
+    font-weight: 600;
+}
+#input-excluir-produto {
+    background: var(--red);
+}
+#input-editar-produto {
+    background: var(--borda-verde);
+}

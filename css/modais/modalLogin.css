@@ -1,0 +1,88 @@
+#modal-login {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: calc(70px + 5%);
+    background: var(--fundo-modal);
+    display: none;
+    backdrop-filter: blur(10px);
+    z-index: 10;
+}
+#modal-login form {
+    width: 90vw;
+    max-width: 900px;
+
+    margin: 40px auto;
+    
+}
+#modal-login form div.input {
+    margin-bottom: 24px;
+    position: relative;
+}
+#modal-login form input{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+    width: calc(100% - 5px);
+    padding: 16px 0 10px 5px;
+
+    border: none;
+    border-bottom: 1px solid var(--background-menu);
+
+    background-color: transparent;
+    outline: none;
+
+    color: var(--letter-primary);
+    letter-spacing: .05em;
+    font-weight: 400;
+    font-size: 1em;
+}
+#modal-login form input[type=submit] {
+    margin-top: 16px;
+    background-color: var(--background-button);
+    color: #222;
+    width: 100%;
+    cursor: pointer;
+}
+#modal-login form input ~ label {
+    position: absolute;
+    top: 16px;
+    left: 5px;
+    color: var(--input-letter-secundary);
+    
+    pointer-events: none;
+
+    transition: .4s;
+}
+#modal-login form input:focus {
+    border-bottom: 1px solid var(--verde);
+} 
+#modal-login form input:focus ~ label,
+#modal-login form input:valid ~ label {
+    transform: translateY(-28px);
+    font-size: .8em;
+    letter-spacing: .1em;
+}
+#modal-login form h2 {
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    color: var(--verde);
+    border-bottom: 4px solid var(--verde);
+    width: max-content;
+}
+#fecha-login {
+    padding: 10px;
+    position: absolute;
+    top: calc(70px + 2%);
+    background: var(--background-menu);
+    right: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#fecha-login:hover {
+    background: var(--verde);
+}

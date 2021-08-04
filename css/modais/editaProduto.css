@@ -1,0 +1,50 @@
+.fundoEditarProduto {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: var(--fundo-modal);
+    z-index: 1;
+    backdrop-filter: blur(10px);
+}
+.modalEditarProduto {
+    width: 80%;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+.modalEditarProduto label {
+    display: block;
+}
+.modalEditarProduto input {
+    width: 100%;
+    height: 40px;
+    background: var(--background-button);
+    border: none;
+    outline: none;
+    font-size: 1em;
+}
+.modalEditarProduto textarea {
+    background: var(--background-button);
+    font-size: 1em;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 70px;
+    max-height: 100px;
+}
+.modalEditarProduto input[type=submit] {
+    height: 50px;
+    background: var(--verde);
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+.modalEditarProduto button {
+    height: 50px;
+    background: var(--red);
+    border: none;
+    font-weight: 600;
+    color: var(--letter-primary);
+    font-size: 1em;
+    cursor: pointer;
+}
