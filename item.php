@@ -156,20 +156,20 @@
 
         <!-- seção de comentários -->
         <?php 
-            foreach ($todosComentarios as $comentario) {
+            foreach ($todosComentarios as $comentUnico) {
                 ?>
                 <div id="secaoComentarios">
                     <p class='nomeCliente'>
-                        <?php echo $comentario['nome']?>  
-                        <?php $dia = new DateTime($comentario['dia_hora']); 
+                        <?php echo $comentUnico['nome']?>  
+                        <?php $dia = new DateTime($comentUnico['dia_hora']); 
                             echo $dia->format('d/m/Y - H:i:s');
                         ?>
                     </p>
-                    <p class='conteudoCliente'><?php echo $comentario['conteudo']?></p>
+                    <p class='conteudoCliente'><?php echo $comentUnico['conteudo']?></p>
 
                     <!-- exibir resposta -->
                     <?php 
-                        $resposta = $c->MostraResposta($comentario['id']);
+                        $resposta = $c->MostraResposta($comentUnico['id']);
                         
                         if($resposta) {
                         ?>
@@ -190,9 +190,9 @@
                         ?>
                             <!-- responder comentário -->
                             <form action="" method="POST" id="formResponderComentario">
-                                <input type="text" hidden name="comentarioDoUsuario" value="<?php echo $comentario['conteudo']?>">
-                                <input type="text" hidden name="quemComentou" value="<?php echo $comentario['nome']?>">
-                                <input type="number" hidden name="idComentario" value="<?php echo $comentario['id']?>">
+                                <input type="text" hidden name="comentarioDoUsuario" value="<?php echo $comentUnico['conteudo']?>">
+                                <input type="text" hidden name="quemComentou" value="<?php echo $comentUnico['nome']?>">
+                                <input type="number" hidden name="idComentario" value="<?php echo $comentUnico['id']?>">
                                 <input type="submit" value="RESPONDER" name="responderComentario">
                             </form>
                         <?php
@@ -208,11 +208,15 @@
                 ?>
                     <div id="formularioDeResposta">
                         <form action="" method="POST">
+                            
                             <input type="text" value="<?php echo $comentarioDoUsuario?>" id="comentarioDoUsuario">
                             <input type="number" hidden name="idComentarioUsuario" value="<?php echo $idComentario?>">
+                            
                             <textarea name="responder" id="" cols="30" rows="10" placeholder="Responder <?php echo $quemComentou?>"></textarea>
+                            
                             <button type="submit" name="cancelarResposta" onclick="fechaModalResposta()">CANCELAR</button>
                             <input type="submit" name="responderUsuario" value="ENVIAR RESPOSTA">
+                        
                         </form>
                     </div>
                     <script>

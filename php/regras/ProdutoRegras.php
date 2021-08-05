@@ -30,10 +30,8 @@ class ProdutoRegras {
      * Mostrar produtos na busca
      */
     function MostraProduto($busca) {
-        $sql = "SELECT * FROM produto WHERE nome_produto LIKE '%:b%' OR desc_produto LIKE '%$busca%' ORDER BY clique DESC";
-        $stmt = Conectar::Banco()->prepare($sql);
-        $stmt->bindValue(":b", $busca);
-        $stmt->execute();
+        $sql = "SELECT * FROM produto WHERE nome_produto LIKE '%$busca%' OR desc_produto LIKE '%$busca%' ORDER BY clique DESC";
+        $stmt = Conectar::Banco()->query($sql);
         if($stmt->rowCount() > 0) {
             $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
             return $res;

@@ -160,6 +160,8 @@
             }
         }
 
+        // buscar um produto traz a página com a lista de encontrados
+
         if(isset($_POST['buscar-produto'])) {
             $pesquisa = addslashes(htmlentities($_POST['nome-produto']));
             if(!empty($pesquisa)) {

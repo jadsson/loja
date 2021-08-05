@@ -15,7 +15,7 @@
     --sombra: rgb(14, 14, 14);
     --sombra-clara: rgba(163, 163, 163, 0.404);
     
-    --fundo-modal: rgba(0,0,0,.8);
+    --fundo-modal: rgb(0,0,0,.99);
 
     --back-page: rgb(20,20,20);
     --background-menu: rgba(255, 255, 255, 0.5);
