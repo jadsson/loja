@@ -114,13 +114,11 @@
                                         <li>CONFIGURAÇÕES</li>
                                         <li>PAGAMENTOS</li>
                                     </div>
-                                    <abbr title="AO CLICAR VOCÊ SERÁ DESLOGADO">
                                         <div id="menuLaretalInferior">
-                                            <a href="sair.php">
+                                            <a href="sair.php" title="SUA SESSÃO SERÁ ENCERRADA">
                                                 <li>SAIR</li>
                                             </a>
                                         </div>
-                                    </abbr>
                                 </ul>
                             </div>
                         </li>

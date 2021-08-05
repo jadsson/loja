@@ -20,7 +20,7 @@ body {
 /* menu superior */
 #menu {
     height: 65px;
-    background-color: var(--background-menu);
+    background-color: var(--background-button);
     backdrop-filter: blur(10px);
     border-radius: 0 0 6px 6px;
     transition: .3s all ease;
@@ -166,4 +166,19 @@ body {
         left: 20%;
     }
 
+    #menu {
+        padding: 0;
+    }
+    #menu img {
+        width: 25px;
+    }
+    #menu ul {
+        margin: 0;
+    }
+    #drop-perfil img {
+        width: 35px;
+        height: 40px;
+        left: -60px;
+
+    }
 }

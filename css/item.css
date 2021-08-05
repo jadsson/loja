@@ -233,3 +233,9 @@
 #input-editar-produto {
     background: var(--borda-verde);
 }
+
+@media (max-width: 600px) {
+    .conteudoItemUnico h1 {
+        font-size: 22px;
+    }
+}

@@ -6,7 +6,7 @@
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 #cardComIconeAdd {
     position: relative;
@@ -86,18 +86,6 @@
     font-size: 30px;
 }
 
-@media (max-width: 600px) {
-    .conteudoProduto h1, h2, h3, p {
-        font-size: .8em;
-    }
-    .conteudoProduto p {
-        margin-top: 10px;
-    }
-    .secaoCardProduto {
-        padding: 0;
-    }
-}
-
 /* h1 que descreve a página */
 .h1-descPagina {
     max-width: 1200px; 
@@ -106,4 +94,19 @@
     margin: auto;
     border-bottom: 4px solid var(--verde);
     font-size: 30px;
+}
+
+@media (max-width: 600px) {
+    .conteudoProduto h1, h2, h3, p {
+        font-size: .8em;
+    }
+    .conteudoProduto p {
+        margin-top: 10px;
+    }
+    .h1-descPagina {
+        font-size: 22px;
+    }
+    .produtoUnico {
+        margin: 2px;
+    }
 }

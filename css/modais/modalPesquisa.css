@@ -54,3 +54,21 @@
 .modal-pesquisa-content img:hover {
     background: var(--red);
 }
+
+@media (max-width: 600px) {
+    .modal-pesquisa-content img {
+        top: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40vw;
+        height: 40px;
+        border-radius: 6px;
+    }
+    .modal-pesquisa-content input[type=submit] {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40vw;
+    }
+}

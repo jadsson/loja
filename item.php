@@ -244,7 +244,9 @@
 </section>
 </div>
 
-<h1 class="h1-descPagina" style="max-width: 1800px!important;">MAIS PRODUTOS EM <?php echo strtoupper($itemAtual['categoria'])?></h1>
+<!-- recomendados  -->
+
+<h1 class="h1-descPagina" style="max-width: 1800px!important;">MAIS EM <?php echo strtoupper($itemAtual['categoria'])?></h1>
 <section class="secaoCardProduto" style="max-width: 1800px!important;">
     <?php 
         require_once 'cardProduto.php';

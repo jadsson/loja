@@ -10,7 +10,7 @@
         <img src="icons/close_black_24dp.svg" alt="" id="fecha-modal-pesquisa">
         <h1>buscar produto</h1>
         <form action="" method="POST">
-            <input type="text" name="nome-produto" maxlength="15">
+            <input type="text" name="nome-produto" maxlength="45">
             <input type="submit" value="Buscar" name="buscar-produto">
         </form>
     </div>

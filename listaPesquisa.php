@@ -17,7 +17,7 @@
             }else{
                 ?>
                     <div id="produtoNaoEncontrado">
-                        <h1><span><?php echo strtoupper($pesquisa) ?></span> NÃO ENCONTRADO</h1>
+                        <h1>PRODUTO NÃO ENCONTRADO</h1>
                         <p>Tente buscar por palavras diferentes</p>
                     </div>
                 <?php
